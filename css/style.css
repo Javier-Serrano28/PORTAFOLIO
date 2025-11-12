@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
+}
+
+header {
+  background: linear-gradient(135deg, #6e8efb, #a777e8);
+  color: white;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+#sobre-mi {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-top: -3rem;
+}
+
+#foto-perfil {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #6e8efb;
+}
+
+#proyectos {
+  margin-top: 3rem;
+}
+
+#proyectos h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #444;
+}
+
+.proyecto {
+  background: white;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.proyecto:hover {
+  transform: translateY(-5px);
+}
+
+.proyecto h3 {
+  color: #6e8efb;
+  margin-bottom: 0.5rem;
+}
+
+.proyecto a {
+  color: #a777e8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contacto {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 3rem 0;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#contacto h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+
+#form-contacto input,
+#form-contacto textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+#form-contacto button {
+  background: #6e8efb;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#form-contacto button:hover {
+  background: #5a78e0;
+}
+
+.hidden {
+  display: none;
+}
+
+#mensaje-enviado {
+  text-align: center;
+  color: green;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #333;
+  color: white;
+  margin-top: 3rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #sobre-mi {
+    flex-direction: column;
+    text-align: center;
+  }
+  #foto-perfil {
+    width: 150px;
+    height: 150px;
+  }
+}

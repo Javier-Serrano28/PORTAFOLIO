@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Portafolio | [Tu Nombre]</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 id="nombre">Cargando...</h1>
+      <p id="profesion"></p>
+    </div>
+  </header>
+
+  <section id="sobre-mi" class="container">
+    <img id="foto-perfil" src="assets/foto.jpg" alt="Foto de perfil" />
+    <div id="descripcion"></div>
+  </section>
+
+  <section id="proyectos" class="container">
+    <h2>Mis Proyectos</h2>
+    <div id="lista-proyectos"></div>
+  </section>
+
+  <section id="contacto" class="container">
+    <h2>Contáctame</h2>
+    <form id="form-contacto">
+      <input type="text" placeholder="Tu nombre" required />
+      <input type="email" placeholder="Tu email" required />
+      <textarea placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="mensaje-enviado" class="hidden">¡Mensaje enviado con éxito!</p>
+  </section>
+
+  <footer>
+    <p>© <span id="anio"></span> [Tu Nombre]. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Cargar JS en orden: Modelo → Vista → Controlador -->
+  <script src="js/model.js"></script>
+  <script src="js/view.js"></script>
+  <script src="js/controller.js"></script>
+  <script>
+    // Inicializar cuando todo esté cargado
+    document.addEventListener("DOMContentLoaded", () => {
+      Controller.init();
+    });
+  </script>
+</body>
+</html>
